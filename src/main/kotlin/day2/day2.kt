@@ -1,7 +1,7 @@
 import java.io.File
 
 private fun readInput(): List<String> {
-    return File("input_day2.txt").readLines();
+    return File("src/main/kotlin/day2/input_day2.txt").readLines();
 }
 
 fun main(args: Array<String>) {

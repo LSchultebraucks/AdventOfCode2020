@@ -1,7 +1,7 @@
 import java.io.File
 
 private fun readInput(): IntArray {
-    val strings: Array<String> = File("input_day1.txt").readLines().toTypedArray();
+    val strings: Array<String> = File("src/main/kotlin/day1/input_day1.txt").readLines().toTypedArray();
     val ints = IntArray(strings.size);
     strings.indices.forEach { ints[it] = strings[it].toInt() }
     return ints;
