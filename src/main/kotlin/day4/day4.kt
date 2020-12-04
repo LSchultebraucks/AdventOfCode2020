@@ -51,7 +51,7 @@ fun isValidPartTwo(passport: Passport): Boolean {
 
     val isHclValid = passport.hcl.matches(Regex("#[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]"))
     val isEclValid = passport.ecl in listOf<String>("amb", "blu", "brn", "gry", "grn", "hzl", "oth")
-    val isPidValid = passport.pid.length == 9 // test if is int
+    val isPidValid = passport.pid.length == 9
     return isByrValid && isIyrValid && isEyrValid && isHgtValid && isHclValid && isEclValid && isPidValid
 }
 
