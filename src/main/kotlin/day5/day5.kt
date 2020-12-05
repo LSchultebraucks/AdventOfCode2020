@@ -39,7 +39,11 @@ fun main(args: Array<String>) {
                     currentColumn = 0
                 }
             } else {
-                part2 = seat.rowId * 8 + currentColumn;
+                if (currentColumn == 7) {
+                    part2 = (seat.rowId - 1) * 8 + currentColumn
+                } else {
+                    part2 = seat.rowId * 8 + currentColumn
+                }
             }
         }
     }
